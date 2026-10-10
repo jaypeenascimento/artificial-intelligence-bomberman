@@ -14,6 +14,9 @@ class Bomb:
 
     def update(self):
         self.timer =- 1;
+
+        if
+
     
     def is_exploded(self):
         return self.timer <= 0;
