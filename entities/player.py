@@ -1,6 +1,7 @@
+from dataclasses import dataclass
 
 @dataclass
-class Jogador:
+class Player:
     id: int
     px: int
     py: int

@@ -1,3 +1,5 @@
+from dataclasses import dataclass
+
 @dataclass
 class Bomb:
     px: int
@@ -10,3 +12,8 @@ class Bomb:
     speed_x: int = 0
     speed_y: int = 0
 
+    def update(self):
+        self.timer =- 1;
+    
+    def is_exploded(self):
+        return self.timer <= 0;
